@@ -17,6 +17,7 @@
     </style>
 
     <style name="JivoSDKTheme" parent="Base.Theme.JivoSDK">
+        <item name="android:fitsSystemWindows">true</item>
         <item name="android:statusBarColor">@color/jivo_sdk_surface</item>
     </style>
 

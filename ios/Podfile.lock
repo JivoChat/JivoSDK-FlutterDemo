@@ -5,73 +5,73 @@ PODS:
   - DTModelStorage (11.0.2):
     - DTModelStorage/Core (= 11.0.2)
   - DTModelStorage/Core (11.0.2)
-  - Firebase/CoreOnly (11.15.0):
-    - FirebaseCore (~> 11.15.0)
-  - Firebase/Messaging (11.15.0):
+  - Firebase/CoreOnly (11.0.0):
+    - FirebaseCore (= 11.0.0)
+  - Firebase/Messaging (11.0.0):
     - Firebase/CoreOnly
-    - FirebaseMessaging (~> 11.15.0)
-  - firebase_core (3.15.2):
-    - Firebase/CoreOnly (= 11.15.0)
+    - FirebaseMessaging (~> 11.0.0)
+  - firebase_core (3.4.0):
+    - Firebase/CoreOnly (= 11.0.0)
     - Flutter
-  - firebase_messaging (15.2.10):
-    - Firebase/Messaging (= 11.15.0)
+  - firebase_messaging (15.1.0):
+    - Firebase/Messaging (= 11.0.0)
     - firebase_core
     - Flutter
-  - FirebaseCore (11.15.0):
-    - FirebaseCoreInternal (~> 11.15.0)
-    - GoogleUtilities/Environment (~> 8.1)
-    - GoogleUtilities/Logger (~> 8.1)
+  - FirebaseCore (11.0.0):
+    - FirebaseCoreInternal (~> 11.0)
+    - GoogleUtilities/Environment (~> 8.0)
+    - GoogleUtilities/Logger (~> 8.0)
   - FirebaseCoreInternal (11.15.0):
     - "GoogleUtilities/NSData+zlib (~> 8.1)"
-  - FirebaseInstallations (11.15.0):
-    - FirebaseCore (~> 11.15.0)
-    - GoogleUtilities/Environment (~> 8.1)
-    - GoogleUtilities/UserDefaults (~> 8.1)
+  - FirebaseInstallations (11.4.0):
+    - FirebaseCore (~> 11.0)
+    - GoogleUtilities/Environment (~> 8.0)
+    - GoogleUtilities/UserDefaults (~> 8.0)
     - PromisesObjC (~> 2.4)
-  - FirebaseMessaging (11.15.0):
-    - FirebaseCore (~> 11.15.0)
+  - FirebaseMessaging (11.0.0):
+    - FirebaseCore (~> 11.0)
     - FirebaseInstallations (~> 11.0)
     - GoogleDataTransport (~> 10.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 8.1)
-    - GoogleUtilities/Environment (~> 8.1)
-    - GoogleUtilities/Reachability (~> 8.1)
-    - GoogleUtilities/UserDefaults (~> 8.1)
+    - GoogleUtilities/AppDelegateSwizzler (~> 8.0)
+    - GoogleUtilities/Environment (~> 8.0)
+    - GoogleUtilities/Reachability (~> 8.0)
+    - GoogleUtilities/UserDefaults (~> 8.0)
     - nanopb (~> 3.30910.0)
   - Flutter (1.0.0)
-  - GoogleDataTransport (10.1.0):
+  - GoogleDataTransport (10.1.1):
     - nanopb (~> 3.30910.0)
     - PromisesObjC (~> 2.4)
-  - GoogleUtilities/AppDelegateSwizzler (8.1.0):
+  - GoogleUtilities/AppDelegateSwizzler (8.1.5):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
     - GoogleUtilities/Privacy
-  - GoogleUtilities/Environment (8.1.0):
+  - GoogleUtilities/Environment (8.1.5):
     - GoogleUtilities/Privacy
-  - GoogleUtilities/Logger (8.1.0):
+  - GoogleUtilities/Logger (8.1.5):
     - GoogleUtilities/Environment
     - GoogleUtilities/Privacy
-  - GoogleUtilities/Network (8.1.0):
+  - GoogleUtilities/Network (8.1.5):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Privacy
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (8.1.0)":
+  - "GoogleUtilities/NSData+zlib (8.1.5)":
     - GoogleUtilities/Privacy
-  - GoogleUtilities/Privacy (8.1.0)
-  - GoogleUtilities/Reachability (8.1.0):
+  - GoogleUtilities/Privacy (8.1.5)
+  - GoogleUtilities/Reachability (8.1.5):
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
-  - GoogleUtilities/UserDefaults (8.1.0):
+  - GoogleUtilities/UserDefaults (8.1.5):
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
   - GzipSwift (5.1.1)
   - JFEmojiPicker (2.0.0)
   - JFMarkdownKit (2.0.0)
   - JFWebSocket (3.0.0)
-  - JivoSDK (5.2.4):
-    - JivoSDK/SDK (= 5.2.4)
-  - JivoSDK/SDK (5.2.4):
+  - JivoSDK (5.3.2):
+    - JivoSDK/SDK (= 5.3.2)
+  - JivoSDK/SDK (5.3.2):
     - CollectionAndTableViewCompatible (~> 0.2.2)
     - GzipSwift (~> 5.1.1)
     - JFEmojiPicker (= 2.0.0)
@@ -94,9 +94,6 @@ PODS:
     - SwiftMime (~> 1.0.0)
     - TypedTextAttributes (~> 1.4.0)
     - XCGLogger (~> 7.0.1)
-  - jivosdk_plugin (0.2.0):
-    - Flutter
-    - JivoSDK
   - JMCodingKit (6.0.0)
   - JMDesignKit (2.0.0)
   - JMImageLoader (1.0.1)
@@ -114,6 +111,9 @@ PODS:
     - DTCollectionViewManager (~> 11.0)
     - JMOnetimeCalculator
     - SwiftyNSException
+  - jvsdk_plugin (0.2.0):
+    - Flutter
+    - JivoSDK
   - JWTDecode (2.6.3)
   - KeychainSwift (22.0.0)
   - libPhoneNumber-iOS (0.9.15)
@@ -125,8 +125,8 @@ PODS:
   - ObjcExceptionBridging (7.1.5):
     - ObjcExceptionBridging/ObjcExceptionBridging (= 7.1.5)
   - ObjcExceptionBridging/ObjcExceptionBridging (7.1.5)
-  - PromisesObjC (2.4.0)
-  - PureParser (2.0.0)
+  - PromisesObjC (2.4.1)
+  - PureParser (2.0.2)
   - ReachabilitySwift (5.2.4)
   - SwiftDate (6.3.1)
   - SwiftMime (1.0.0)
@@ -141,10 +141,10 @@ DEPENDENCIES:
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - firebase_messaging (from `.symlinks/plugins/firebase_messaging/ios`)
   - Flutter (from `Flutter`)
-  - jivosdk_plugin (from `.symlinks/plugins/jivosdk_plugin/ios`)
+  - jvsdk_plugin (from `.symlinks/plugins/jvsdk_plugin/ios`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - CollectionAndTableViewCompatible
     - DTCollectionViewManager
     - DTModelStorage
@@ -162,13 +162,14 @@ SPEC REPOS:
     - nanopb
     - ObjcExceptionBridging
     - PromisesObjC
+    - PureParser
     - ReachabilitySwift
     - SwiftDate
     - SwiftMime
     - SwiftyNSException
     - TypedTextAttributes
     - XCGLogger
-  https://github.com/JivoChat/cocoapods-repo.git:
+  https://github.com/jivochat/cocoapods-repo.git:
     - JFEmojiPicker
     - JFMarkdownKit
     - JFWebSocket
@@ -182,7 +183,6 @@ SPEC REPOS:
     - JMScalableView
     - JMSidePanelKit
     - JMTimelineKit
-    - PureParser
 
 EXTERNAL SOURCES:
   firebase_core:
@@ -191,29 +191,28 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/firebase_messaging/ios"
   Flutter:
     :path: Flutter
-  jivosdk_plugin:
-    :path: ".symlinks/plugins/jivosdk_plugin/ios"
+  jvsdk_plugin:
+    :path: ".symlinks/plugins/jvsdk_plugin/ios"
 
 SPEC CHECKSUMS:
   CollectionAndTableViewCompatible: 10a37e76c29faa193595f7d345e4353473e4ce92
   DTCollectionViewManager: ca85ad0b71bc42d04852609e8c26664c138b7909
   DTModelStorage: 321da46178bb09fec4a681cb6ff34c20e173319e
-  Firebase: d99ac19b909cd2c548339c2241ecd0d1599ab02e
-  firebase_core: 995454a784ff288be5689b796deb9e9fa3601818
-  firebase_messaging: f4a41dd102ac18b840eba3f39d67e77922d3f707
-  FirebaseCore: efb3893e5b94f32b86e331e3bd6dadf18b66568e
+  Firebase: 9f574c08c2396885b5e7e100ed4293d956218af9
+  firebase_core: 53cecb83c72fea329b267bb0accb06a33e9f036a
+  firebase_messaging: 62c8a01f1ee118754d01dd4fd83ba670980326a3
+  FirebaseCore: 3cf438f431f18c12cdf2aaf64434648b63f7e383
   FirebaseCoreInternal: 9afa45b1159304c963da48addb78275ef701c6b4
-  FirebaseInstallations: 317270fec08a5d418fdbc8429282238cab3ac843
-  FirebaseMessaging: 3b26e2cee503815e01c3701236b020aa9b576f09
-  Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
-  GoogleDataTransport: aae35b7ea0c09004c3797d53c8c41f66f219d6a7
-  GoogleUtilities: 00c88b9a86066ef77f0da2fab05f65d7768ed8e1
+  FirebaseInstallations: 6ef4a1c7eb2a61ee1f74727d7f6ce2e72acf1414
+  FirebaseMessaging: d2d1d9c62c46dd2db49a952f7deb5b16ad2c9742
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  GoogleDataTransport: a24e58982ab3ba2f64d79613e027fe7f57e88539
+  GoogleUtilities: 7dc09b3fa9ecb5c2298b952313d14628b61b9da3
   GzipSwift: 893f3e48e597a1a4f62fafcb6514220fcf8287fa
   JFEmojiPicker: 118e391b52407a4fa30c74c084f707a125a2c484
   JFMarkdownKit: 1e21e28dcd6b3a2788f9ac2627a56ea4e3874312
   JFWebSocket: d0a6b1e6126b49c4677ede21f5c8bb2b72ed72f0
-  JivoSDK: 957cb0282fa2d053184aa06cea2ba85bf23d44e5
-  jivosdk_plugin: 5ea289e51716bfdd3b44fc9a62144556307b06f9
+  JivoSDK: cfc9f4072229d624eaaa9d38e0fcd5435fe04a0b
   JMCodingKit: 683af973f6fc479328a6c6cb33569840e60d7491
   JMDesignKit: c7fd7d34a4c67a8892cca737213d312f735f8f18
   JMImageLoader: 60d2f292d223bdeba9e17759e484e822cce9d650
@@ -223,13 +222,14 @@ SPEC CHECKSUMS:
   JMScalableView: 6031bc1654b8d0a7974cacd39ce6b49a65f9dd14
   JMSidePanelKit: 35ec9a634e2ca5242096b078fef03b4eae65a3e9
   JMTimelineKit: 905ee82b3c13437d9a5f2ebfec22af3dc99b25b5
+  jvsdk_plugin: abd164109e006c02eb9316301d05ef21aa064d40
   JWTDecode: 33e5e26e5ddbd21b2065820894c08fef0cad9509
   KeychainSwift: 72f81155e1cb01c1bc4da296e4ce2cfcff556a12
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
-  nanopb: e07afb972c7e104b1b19a656019513bb883efa03
+  nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
   ObjcExceptionBridging: d3d37d62981bb7f252ecb31b62d7e23a96bbfb8a
-  PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
-  PureParser: 88104535a945042c2ed259f24cfedab4e3416e40
+  PromisesObjC: 752c3227f599e3467650e47ea36f433eeb10c273
+  PureParser: c799b39ab32b0c07e483164604b1543a0212210e
   ReachabilitySwift: 32793e867593cfc1177f5d16491e3a197d2fccda
   SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
   SwiftMime: 646f8ad739280b819860e1b58a273cec6baaccf4
@@ -237,6 +237,6 @@ SPEC CHECKSUMS:
   TypedTextAttributes: 8b363a82553099d885c9f06648ae9aed09bec263
   XCGLogger: 1943831ef907df55108b0b18657953f868de973b
 
-PODFILE CHECKSUM: db62f160bb246187f089e350afcfd22cf88073ed
+PODFILE CHECKSUM: 9261465b4d8c17e08b8b8829553b7fcde9359052
 
 COCOAPODS: 1.16.2

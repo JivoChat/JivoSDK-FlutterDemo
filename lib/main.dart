@@ -1,9 +1,26 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:jivosdk_plugin/bridge.dart';
+import 'package:jvsdk_plugin/bridge.dart';
+import 'api/firebase_api.dart';
+import 'firebase_options.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Jivo.session.setup(channelId: "3cfxOugRYn", userToken: "");
+
+  await Jivo.session.setup(channelId: "3cfxOugRYn", userToken: "");
+  Jivo.session.startWatchingUnreadCounter((int number) {
+    print("Counter update: $number");
+  });
+
+  try {
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+    await FireBaseApi().initNotifications();
+  } catch (e, st) {
+    debugPrint('Push init failed: $e\n$st');
+  }
+
   runApp(const App());
 }
 
@@ -58,8 +75,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  void _openJivoSDK() {
-    Jivo.display.present();
+  void _openJivoSDK() async {
+   await Jivo.display.present();
   }
 
   @override
