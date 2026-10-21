@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "566025135899",
-    "project_id": "jivosdk-flutterdemo",
-    "storage_bucket": "jivosdk-flutterdemo.appspot.com"
+    "project_number": "1079274187098",
+    "project_id": "jvsdk-plugin",
+    "storage_bucket": "jvsdk-plugin.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:566025135899:android:34a85c40d7c1a05dfc15be",
+        "mobilesdk_app_id": "1:1079274187098:android:eec279c53d641c33d46b63",
         "android_client_info": {
           "package_name": "com.jivosite.jivosdk_flutter_demo"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDQJFCSQu-lm1H_1E4qcKgozIYDI3Oeth8"
+          "current_key": "AIzaSyDqAAPUpDcYy4mUd2Yu0-SQ6gS1QVZKBus"
         }
       ],
       "services": {

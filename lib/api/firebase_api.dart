@@ -24,7 +24,7 @@ class FireBaseApi {
     }
 
     debugPrint('FCM token: $token');
-    await Jivo.notifications.subscribeToPush(token, JVPushProvider.fcm);
+    await Jivo.notifications.setPushToken(token);
     debugPrint('Push token registered in Jivo SDK');
   }
 }
